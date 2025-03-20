@@ -2,7 +2,7 @@ import axios from "axios";
 import { useAuthStore } from "@/stores/auth";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://crud-prestamos-v3us.onrender.com/",
 });
 
 axiosInstance.interceptors.request.use((config) => {

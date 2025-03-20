@@ -9,7 +9,7 @@ export const useAuthStore = defineStore("auth", {
     async login(credentials: { username: string; password: string }) {
       try {
         const response = await axios.post(
-          "http://localhost:8000/login",
+          "https://crud-prestamos-v3us.onrender.com/login",
           credentials
         );
         this.token = response.data.access_token;
