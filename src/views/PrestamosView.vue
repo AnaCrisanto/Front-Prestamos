@@ -132,7 +132,7 @@ const tipoMensaje = ref("");
 // Obtener préstamos
 const obtenerPrestamos = async () => {
   try {
-    const response = await axios.get("http://localhost:8000/loans");
+    const response = await axios.get("https://crud-prestamos-v3us.onrender.com/loans");
     prestamos.value = response.data;
   } catch (error) {
     mostrarNotificacion("Error al obtener préstamos", "error");
@@ -142,7 +142,7 @@ const obtenerPrestamos = async () => {
 // Obtener usuarios
 const obtenerUsuarios = async () => {
   try {
-    const response = await axios.get("http://localhost:8000/users");
+    const response = await axios.get("https://crud-prestamos-v3us.onrender.com/users");
     usuarios.value = response.data;
   } catch (error) {
     mostrarNotificacion("Error al obtener usuarios", "error");
@@ -152,7 +152,7 @@ const obtenerUsuarios = async () => {
 // Obtener materiales
 const obtenerMateriales = async () => {
   try {
-    const response = await axios.get("http://localhost:8000/materials");
+    const response = await axios.get("https://crud-prestamos-v3us.onrender.com/materials");
     materiales.value = response.data;
   } catch (error) {
     mostrarNotificacion("Error al obtener materiales", "error");
@@ -164,12 +164,12 @@ const guardarPrestamo = async () => {
   try {
     if (prestamoEditado.value) {
       await axios.put(
-        `http://localhost:8000/loans/${prestamoEditado.value.id}`,
+        `https://crud-prestamos-v3us.onrender.com//loans/${prestamoEditado.value.id}`,
         formPrestamo.value
       );
       mostrarNotificacion("Préstamo actualizado correctamente", "exito");
     } else {
-      await axios.post("http://localhost:8000/loans", formPrestamo.value);
+      await axios.post("https://crud-prestamos-v3us.onrender.com/loans", formPrestamo.value);
       mostrarNotificacion("Préstamo creado correctamente", "exito");
     }
     obtenerPrestamos();
@@ -189,7 +189,7 @@ const editarPrestamo = (prestamo: Prestamo) => {
 // Eliminar préstamo
 const eliminarPrestamo = async (id: number) => {
   try {
-    await axios.delete(`http://localhost:8000/loans/${id}`);
+    await axios.delete(`https://crud-prestamos-v3us.onrender.com/loans/${id}`);
     mostrarNotificacion("Préstamo eliminado correctamente", "exito");
     obtenerPrestamos();
   } catch (error) {

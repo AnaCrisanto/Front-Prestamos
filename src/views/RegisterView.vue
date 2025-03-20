@@ -91,7 +91,7 @@ const handleRegister = async () => {
       numero_telefono: numeroTelefono.value,
     };
 
-    await axios.post("http://localhost:8000/users", userData);
+    await axios.post("https://crud-prestamos-v3us.onrender.com/users", userData);
     router.push("/login");
   } catch (error) {
     console.error("Error al registrar usuario", error);

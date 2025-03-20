@@ -111,7 +111,7 @@ const tipoMensaje = ref("");
 // Obtener materiales
 const obtenerMateriales = async () => {
   try {
-    const response = await axios.get("http://localhost:8000/materials");
+    const response = await axios.get("https://crud-prestamos-v3us.onrender.com/materials");
     materiales.value = response.data;
   } catch (error) {
     mostrarNotificacion("Error al obtener materiales", "error");
@@ -123,12 +123,12 @@ const guardarMaterial = async () => {
   try {
     if (materialEditado.value) {
       await axios.put(
-        `http://localhost:8000/materials/${materialEditado.value.id}`,
+        `https://crud-prestamos-v3us.onrender.com/${materialEditado.value.id}`,
         formMaterial.value
       );
       mostrarNotificacion("Material actualizado correctamente", "exito");
     } else {
-      await axios.post("http://localhost:8000/materials", formMaterial.value);
+      await axios.post("https://crud-prestamos-v3us.onrender.com/materials", formMaterial.value);
       mostrarNotificacion("Material creado correctamente", "exito");
     }
     obtenerMateriales();
@@ -148,7 +148,7 @@ const editarMaterial = (material: Material) => {
 // Eliminar material
 const eliminarMaterial = async (id: number) => {
   try {
-    await axios.delete(`http://localhost:8000/materials/${id}`);
+    await axios.delete(`https://crud-prestamos-v3us.onrender.com/${id}`);
     mostrarNotificacion("Material eliminado correctamente", "exito");
     obtenerMateriales();
   } catch (error) {
