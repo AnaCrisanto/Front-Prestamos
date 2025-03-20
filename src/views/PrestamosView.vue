@@ -243,8 +243,8 @@ onMounted(() => {
 
 <style scoped>
 .prestamos-view {
-  padding: 20px;
-  max-width: 1200px;
+  padding: 15px;
+  max-width: 1000px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -254,18 +254,18 @@ onMounted(() => {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 8px 18px;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1.2em;
+  gap: 6px;
+  font-size: 1em;
 }
 
 .table-container {
   overflow-x: auto;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .styled-table {
@@ -274,12 +274,12 @@ onMounted(() => {
   background-color: rgb(228, 226, 226);
   color: #555;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .styled-table th,
 .styled-table td {
-  padding: 12px;
+  padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ffffff;
 }
@@ -293,9 +293,10 @@ onMounted(() => {
 }
 
 .estatus {
-  padding: 5px 10px;
+  padding: 4px 8px;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 .estatus.activo {
@@ -318,7 +319,7 @@ onMounted(() => {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #555;
 }
 
@@ -352,24 +353,25 @@ onMounted(() => {
 
 .modal-content {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 450px;
   width: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .modal-buttons {
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }
 
 .btn-guardar,
 .btn-cancelar {
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 0.9em;
 }
 
 .btn-guardar {
@@ -383,11 +385,11 @@ onMounted(() => {
 }
 
 .notificacion {
-  padding: 10px;
-  margin-top: 20px;
+  padding: 8px;
+  margin-top: 15px;
   border-radius: 5px;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .notificacion.exito {

@@ -181,19 +181,18 @@ onMounted(() => {
   obtenerMateriales();
 });
 </script>
-
 <style scoped>
 .materiales-view {
-  padding: 20px;
-  max-width: 1200px;
+  padding: 10px;
+  max-width: 900px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 1.8em;
+  margin-bottom: 15px;
   color: #333;
 }
 
@@ -201,13 +200,13 @@ h1 {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
+  padding: 8px 15px;
+  border-radius: 6px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1.2em;
+  gap: 6px;
+  font-size: 1em;
   transition: background-color 0.3s;
 }
 
@@ -217,7 +216,7 @@ h1 {
 
 .table-container {
   overflow-x: auto;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 table {
@@ -225,23 +224,21 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 th,
 td {
-  padding: 15px;
+  padding: 10px;
   text-align: left;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 th {
   background-color: #f8f9fa;
   color: #555;
   font-weight: 600;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 td {
@@ -255,9 +252,8 @@ tr:nth-child(even) td {
 }
 
 .estatus {
-  padding: 5px 15px;
-  border-radius: 25px;
-  text-transform: capitalize;
+  padding: 3px 10px;
+  border-radius: 15px;
   font-weight: 600;
 }
 
@@ -281,8 +277,8 @@ tr:nth-child(even) td {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 1.3em;
-  margin: 0 10px;
+  font-size: 1.1em;
+  margin: 0 8px;
   transition: color 0.3s;
 }
 
@@ -308,7 +304,7 @@ tr:nth-child(even) td {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,48 +312,48 @@ tr:nth-child(even) td {
 
 .modal-content {
   background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  width: 450px;
-  font-size: 1.2em;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  font-size: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .form-group input,
 .form-group select {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1.1em;
+  border-radius: 6px;
+  font-size: 0.9em;
 }
 
 .modal-buttons {
   display: flex;
   justify-content: flex-end;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 8px;
+  margin-top: 15px;
 }
 
 .btn-guardar {
   background-color: #28a745;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 8px 15px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1em;
   transition: background-color 0.3s;
 }
 
@@ -369,10 +365,10 @@ tr:nth-child(even) td {
   background-color: #dc3545;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 8px 15px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1em;
   transition: background-color 0.3s;
 }
 
@@ -382,10 +378,10 @@ tr:nth-child(even) td {
 
 .notificacion {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 12px 20px;
-  border-radius: 8px;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  border-radius: 6px;
   color: white;
   font-weight: bold;
 }
