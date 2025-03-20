@@ -9,4 +9,7 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  build: {
+    outDir: "dist/client", // Asegúrate de que los archivos se generen en dist/client
+  },
 });
