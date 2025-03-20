@@ -243,7 +243,7 @@ onMounted(() => {
 
 <style scoped>
 .prestamos-view {
-  padding: 15px;
+  padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -279,7 +279,7 @@ onMounted(() => {
 
 .styled-table th,
 .styled-table td {
-  padding: 8px;
+  padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ffffff;
 }
